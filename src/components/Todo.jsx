@@ -86,7 +86,9 @@ const Todo = () => {
   };
 
   return (
-    <section className="h-[100vh] bg-todo-bg2 bg-cover bg-no-repeat opacity-90 ">
+    <section
+      className={`h-[100vh] if(bg-todo-bg2) ? bg-todo-bg2 bg-cover bg-no-repeat opacity-90 : bg-black `}
+    >
       <div className="container m-auto">
         <div className="flex items-center justify-center h-[100vh]">
           <div className="flex flex-col  h-[90vh] max-w-[550px] m-auto border rounded-md shadow-lg px-[20px] backdrop-saturate-150 backdrop-blur-md">
